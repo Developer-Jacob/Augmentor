@@ -265,7 +265,7 @@ class Pipeline(object):
                         images[i].save(os.path.join(augmentor_image.output_directory, save_name))
 
             except IOError as e:
-                print("Error writing %s, %s. Change save_format to PNG?" % (file_name, e.message))
+                print("Error writing %s, %s. Change save_format to PNG?" % (file_name, e))
                 print("You can change the save format using the set_save_format(save_format) function.")
                 print("By passing save_format=\"auto\", Augmentor can save in the correct format automatically.")
 
